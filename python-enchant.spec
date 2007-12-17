@@ -6,7 +6,6 @@ Group:          Development/Python
 License:        LGPL
 URL:            http://pyenchant.sourceforge.net/
 Source0:        http://dl.sourceforge.net/sourceforge/pyenchant/pyenchant-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  enchant-devel python-setuptools
 %py_requires -d
 Provides:       PyEnchant = %{version}-%{release}
