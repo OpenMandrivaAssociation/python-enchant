@@ -6,6 +6,7 @@ Group:          Development/Python
 License:        LGPL
 URL:            http://pyenchant.sourceforge.net/
 Source0:        http://dl.sourceforge.net/sourceforge/pyenchant/pyenchant-%{version}.tar.gz
+Patch0:		pyenchant-1.4.0-fix-str-fmt.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  enchant-devel python-setuptools
 %py_requires -d
@@ -18,7 +19,7 @@ library by Dom Lachowicz.
 
 %prep
 %setup -q -n pyenchant-%{version}
-
+%patch0 -p0
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" %{__python} setup.py build
