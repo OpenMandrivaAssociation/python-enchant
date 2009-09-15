@@ -1,6 +1,6 @@
 Name:           python-enchant
 Version:        1.4.0
-Release:        %mkrel 3
+Release:        %mkrel 4
 Summary:        Python bindings for Enchant spellchecking library
 Group:          Development/Python
 License:        LGPL
