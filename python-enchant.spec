@@ -1,10 +1,10 @@
 Name:           python-enchant
-Version:        1.5.3
-Release:        %mkrel 2
+Version:        1.6.5
+Release:        %mkrel 1
 Summary:        Python bindings for Enchant spellchecking library
 Group:          Development/Python
 License:        LGPL
-URL:            http://www.rfk.id.au/software/pyenchant/
+URL:		http://packages.python.org/pyenchant/
 Source0:        http://pypi.python.org/packages/source/p/pyenchant/pyenchant-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:	noarch
@@ -14,9 +14,11 @@ Provides:       PyEnchant = %{version}-%{release}
 Requires:	enchant >= 1.5.0
 
 %description
-PyEnchant is a spellchecking library for Python, based on the Enchant
-library by Dom Lachowicz.
+PyEnchant is a spellchecking library for Python, based on the excellent Enchant
+library.
 
+PyEnchant combines all the functionality of the underlying Enchant library with
+the flexibility of Python and a nice "Pythonic" object-oriented interface.
 
 %prep
 %setup -q -n pyenchant-%{version}
