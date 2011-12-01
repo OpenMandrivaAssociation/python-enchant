@@ -28,12 +28,12 @@ CFLAGS="$RPM_OPT_FLAGS" %{__python} setup.py build
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT --single-version-externally-managed
-rm -rf $RPM_BUILD_ROOT/%{python_sitelib}/*.egg-info
+rm -rf %{buildroot}
+%{__python} setup.py install -O1 --skip-build --root %{buildroot} --single-version-externally-managed
+rm -rf %{buildroot}/%{python_sitelib}/*.egg-info
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
