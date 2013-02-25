@@ -27,8 +27,8 @@ python setup.py build
 
 %install
 python setup.py install -O1 --skip-build --root "%{buildroot}" --single-version-externally-managed
-rm -rf %{buildroot}/%{python_sitelib}/*.egg-info
 
 %files
 %doc LICENSE.txt README.txt TODO.txt
 %{python_sitelib}/enchant
+%{python_sitelib}/*.egg-info
