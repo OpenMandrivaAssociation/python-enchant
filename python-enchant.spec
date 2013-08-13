@@ -1,13 +1,14 @@
 Name:		python-enchant
 Version:	1.6.5
-Release:	2
+Release:	3
 Summary:	Python bindings for Enchant spellchecking library
 Group:		Development/Python
 License:	LGPL
 URL:		http://packages.python.org/pyenchant/
 Source0:	http://pypi.python.org/packages/source/p/pyenchant/pyenchant-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	pkgconfig(enchant) python-setuptools
+BuildRequires:	pkgconfig(enchant)
+BuildRequires:	python-setuptools
 Provides:	PyEnchant = %{version}-%{release}
 Requires:	enchant >= 1.5.0
 
