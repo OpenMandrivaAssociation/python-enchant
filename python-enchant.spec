@@ -8,9 +8,9 @@ Url:		http://packages.python.org/pyenchant/
 Source0:	http://pypi.python.org/packages/source/p/pyenchant/pyenchant-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
-BuildRequires:	python3-distribute
+BuildRequires:	python2-setuptools
 BuildRequires:	pkgconfig(enchant)
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python2)
 BuildRequires:	pkgconfig(python3)
 Provides:	PyEnchant = %{version}-%{release}
 Requires:	enchant >= 1.5.0
