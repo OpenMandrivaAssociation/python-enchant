@@ -1,7 +1,7 @@
 Summary:	Python bindings for Enchant spellchecking library
 Name:		python-enchant
 Version:	1.6.6
-Release:	7
+Release:	8
 Group:		Development/Python
 License:	LGPLv2
 Url:		http://pythonhosted.org/pyenchant/
