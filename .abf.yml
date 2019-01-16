@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   pyenchant-1.6.6.tar.gz: 353b0b06cb29deef46298337afdd96ec71f01625
+sources:
+  pyenchant-2.0.0.tar.gz: 92ca797bbef9660271c3a9269ff7eb841272044d
