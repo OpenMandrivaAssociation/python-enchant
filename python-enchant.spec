@@ -1,11 +1,11 @@
 Summary:	Python bindings for Enchant spellchecking library
 Name:		python-enchant
-Version:	2.0.0
-Release:	9
+Version:	3.1.1
+Release:	1
 Group:		Development/Python
 License:	LGPLv2
-Url:		http://pythonhosted.org/pyenchant/
-Source0:	https://files.pythonhosted.org/packages/9e/54/04d88a59efa33fefb88133ceb638cdf754319030c28aadc5a379d82140ed/pyenchant-2.0.0.tar.gz
+Url:		https://pypi.org/project/pyenchant/
+Source0:	https://files.pythonhosted.org/packages/source/p/pyenchant/pyenchant-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	python2-setuptools
@@ -60,12 +60,11 @@ python3 setup.py install -O1 --skip-build --root "%{buildroot}" --single-version
 popd
 
 %files
-%doc python3/LICENSE.txt python3/README.txt python3/TODO.txt
+%doc python3/LICENSE.txt
 %{py3_puresitedir}/enchant
 %{py3_puresitedir}/*.egg-info
 
 %files -n python2-enchant
-%doc python2/LICENSE.txt python2/README.txt python2/TODO.txt
+%doc python2/LICENSE.txt
 %{py2_puresitedir}/enchant
 %{py2_puresitedir}/*.egg-info
-
