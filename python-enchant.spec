@@ -1,6 +1,6 @@
 Summary:	Python bindings for Enchant spellchecking library
 Name:		python-enchant
-Version:	3.1.1
+Version:	3.2.0
 Release:	1
 Group:		Development/Python
 License:	LGPLv2
@@ -13,7 +13,7 @@ BuildRequires:	pkgconfig(enchant)
 BuildRequires:	pkgconfig(python2)
 BuildRequires:	pkgconfig(python3)
 Provides:	PyEnchant = %{version}-%{release}
-Requires:	enchant >= 1.5.0
+Requires:	enchant2 >= 2.2.0
 %rename 	python3-enchant
 
 %description
