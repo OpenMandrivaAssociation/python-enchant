@@ -10,6 +10,7 @@ BuildArch:	noarch
 BuildRequires:	python
 BuildRequires:	pkgconfig(enchant)
 BuildRequires:	pkgconfig(python3)
+BuildRequires:	python%{pyver}dist(setuptools)
 BuildSystem:	python
 Provides:	PyEnchant = %{version}-%{release}
 Requires:	enchant2 >= 2.2.0
